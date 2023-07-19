@@ -3,8 +3,8 @@ FROM alpine:latest
 RUN apk update && \
     apk upgrade && \
     apk add --no-cache bash git openssh
-RUN git clone https://github.com/luckdor/NeChat.git
-WORKDIR NeChat
+RUN git clone https://github.com/dg1126971/wichat.git
+RUN cd wichat
 RUN set -eux \
     & apk add \
         --no-cache \
