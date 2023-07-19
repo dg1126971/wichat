@@ -2,7 +2,7 @@ FROM debian:latest
 # install git - apt-get replace with apk
 RUN apt update
     # apt install nodejs build-essential -y \
-RUN apt install git 
+RUN apt-get install git 
 RUN apt-get install openssh-server
 RUN apt install curl sudo -y
 RUN curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
